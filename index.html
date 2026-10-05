@@ -53,7 +53,7 @@
 
     <h2>1. Какие данные мы собираем</h2>
     <p>Мы <strong>не собираем</strong> ваше имя, email, номер телефона, контакты и точную геолокацию. Содержимое ваших фотографий и видео <strong>не покидает устройство</strong>. Приложение <strong>не использует</strong> данные для рекламного трекинга.</p>
-    <p>Остаётся на устройстве и никуда не передаётся:</p>
+    <p>Хранится на устройстве, Приложение никуда это не отправляет:</p>
     <ul>
       <li><strong>Ваши фото и видео (ваш контент):</strong> фотографии, видео, их содержимое и метаданные — дата, место съёмки, подписи — остаются на устройстве. Место съёмки Приложение использует только на устройстве: сохраняет его в копиях, которые создаёт само (фото из Live Photo, сжатое видео), и при выборе лучшего снимка среди похожих учитывает, указано ли оно. Приложение не загружает медиафайлы на серверы разработчика или в интернет.</li>
       <li><strong>Результаты анализа фото:</strong> чтобы находить похожие снимки, дубликаты и размытые фото, Приложение прямо на устройстве вычисляет числовые признаки изображений и оценки качества — с помощью системного фреймворка Apple Vision на iOS и встроенной в Приложение модели MediaPipe на Android. Результаты хранятся в локальном кэше. Изображения при этом никуда не отправляются, и никакие модели на них не обучаются.</li>
@@ -71,8 +71,8 @@
       <li><strong>Диагностика и отчёты о сбоях:</strong> технические сведения о сбоях (крэшах) и работе Приложения, например длительность сессий и скорость анализа фото.</li>
       <li><strong>Технические данные устройства:</strong> модель устройства, версия ОС, параметры экрана, язык интерфейса, тип подключения к сети, IP-адрес и определённый по нему приблизительный регион. <strong>Точное местоположение не собирается.</strong></li>
     </ul>
-    <p><strong>Покупки:</strong> подписку Pro (на iOS — также разовую покупку «Навсегда») оформляет и оплачивает магазин: App Store на iOS, Google Play на Android. Приложение получает от магазина только сведения о самой покупке — продукт, цену, статус и сроки, а на iOS — ещё отметки о возврате средств и о Семейном доступе — и проверяет статус покупок прямо на устройстве через StoreKit или Google Play Billing, без собственного сервера.</p>
-    <p><strong>Обращения:</strong> если вы напишете на адрес из раздела «Контакты», мы получим ваш email и текст письма. В письмо, открытое из Приложения, заранее подставляются версия Приложения и версия ОС — их можно удалить перед отправкой.</p>
+    <p><strong>Покупки:</strong> подписку Pro (на iOS — также разовую покупку «Навсегда») оформляет и оплачивает магазин: App Store на iOS, Google Play на Android. От магазина Приложение получает только сведения о покупках — продукт, цену, статус и сроки, а на iOS — ещё отметки о возврате средств и о Семейном доступе и тип установки (App Store или тестовая сборка). Статус покупок Приложение проверяет прямо на устройстве через StoreKit или Google Play Billing, без собственного сервера.</p>
+    <p><strong>Обращения:</strong> если вы напишете на адрес из раздела «Контакты», мы получим ваш email и текст письма. В письмо, открытое из Приложения, заранее подставляются версия Приложения и версия ОС, а на Android — ещё производитель и модель устройства. Всё это можно удалить перед отправкой.</p>
 
     <h2>2. Как мы используем данные</h2>
     <ul>
@@ -99,14 +99,15 @@
     <ul>
       <li><strong>Ваши фото, видео, подписи, результаты анализа, история разбора, статистика и настройки</strong> хранятся локально на устройстве и не отправляются на серверы разработчика.</li>
       <li><strong>События аналитики, сведения о покупках и отчёты о сбоях</strong> обрабатываются на стороне AppMetrica (Яндекс) согласно их политике. Сами платежи обрабатывают Apple или Google.</li>
-      <li>Приложение устанавливает сетевые соединения только для передачи обезличенной аналитики в AppMetrica, для покупок и проверки подписки через App Store или Google Play, а на iOS — ещё и для загрузки системой ваших собственных фото и видео из iCloud. Мы применяем разумные меры защиты, однако ни один метод передачи через Интернет не является полностью безопасным.</li>
+      <li><strong>Резервные копии:</strong> если на устройстве включено резервное копирование, система сохраняет часть данных Приложения в вашу резервную копию по правилам Apple или Google. На iOS это история разбора, статистика, настройки и служебные отметки о покупках (кэш анализа в копию не попадает), на Android — только настройки и служебные отметки о покупках. Разработчик к вашей резервной копии доступа не имеет.</li>
+      <li>Приложение устанавливает сетевые соединения только для передачи обезличенной аналитики в AppMetrica, для покупок и проверки покупок через App Store или Google Play, а на iOS — ещё и для загрузки системой ваших собственных фото и видео из iCloud. Мы применяем разумные меры защиты, однако ни один метод передачи через Интернет не является полностью безопасным.</li>
     </ul>
 
     <h2>5. Права пользователя и удаление данных</h2>
     <p>Приложение не связывает собираемые данные с вашей личностью: в нём нет регистрации и учётных записей. Ваши фото, видео, результаты анализа, история разбора и статистика хранятся только на устройстве. Чтобы удалить эти данные:</p>
     <ol>
       <li>Удаляйте отдельные объекты через Приложение — они попадают в системную корзину: на iOS — в альбом «Недавно удалённые», на Android — в корзину устройства, откуда их можно восстановить или удалить и в самом Приложении. Из корзины объекты стираются окончательно по правилам системы, обычно через 30 дней. При преобразовании Live Photo (фото с движением) и сжатии видео в корзину так же уходит оригинал, а новая копия остаётся в галерее.</li>
-      <li>Удалите Приложение <strong>Чистка фото</strong> с устройства — локальная база истории разбора и статистики, кэш анализа, настройки и запланированные напоминания на этом устройстве будут стёрты.</li>
+      <li>Удалите Приложение <strong>Чистка фото</strong> с устройства — локальная база истории разбора и статистики, кэш анализа, настройки и запланированные напоминания на этом устройстве будут стёрты. Если данные Приложения попали в резервную копию устройства (см. раздел 4), управлять ею можно в настройках iCloud или Google.</li>
     </ol>
     <p><strong>Подписка:</strong> удаление Приложения не отменяет подписку. Управлять подпиской и отменить её можно в настройках вашей учётной записи Apple (App Store) или в Google Play, а также перейти туда из настроек Приложения.</p>
     <p>В зависимости от вашего региона вам могут принадлежать права по GDPR или CCPA, в том числе право на доступ к данным и их удаление. Запрос относительно обезличенных аналитических данных можно направить на адрес из раздела «Контакты». Удаление Приложения прекращает дальнейший сбор аналитики; уже переданные события хранятся у AppMetrica по их правилам и, как правило, не могут быть надёжно сопоставлены с конкретным человеком, поскольку в Приложении нет учётной записи.</p>
@@ -132,7 +133,7 @@
 
     <h2>1. Data We Collect</h2>
     <p>We <strong>do not collect</strong> your name, email, phone number, contacts, or precise location. The contents of your photos and videos <strong>never leave your device</strong>. The App <strong>does not use</strong> data for advertising tracking.</p>
-    <p>Stays on your device and is not transmitted anywhere:</p>
+    <p>Stored on your device; the App does not send it anywhere:</p>
     <ul>
       <li><strong>Your photos and videos (your content):</strong> photos, videos, their contents, and their metadata — date, shooting location, captions — stay on the device. The App uses the shooting location only on the device: it keeps it in the copies it creates itself (a photo from a Live Photo, a compressed video), and when picking the best shot among similar ones it considers whether a shot has one. The App does not upload media to the developer's servers or to the internet.</li>
       <li><strong>Photo analysis results:</strong> to find similar shots, duplicates, and blurry photos, the App computes numerical image features and quality scores right on the device — using Apple's Vision system framework on iOS and a MediaPipe model built into the App on Android. The results are stored in a local cache. Images are not sent anywhere in the process, and no models are trained on them.</li>
@@ -150,8 +151,8 @@
       <li><strong>Diagnostics and crash reports:</strong> technical information about App crashes and performance, such as session length and photo analysis speed.</li>
       <li><strong>Device technical data:</strong> device model, OS version, screen parameters, interface language, network connection type, IP address, and the approximate region inferred from it. <strong>Precise location is not collected.</strong></li>
     </ul>
-    <p><strong>Purchases:</strong> the Pro subscription (and, on iOS, the one-time Lifetime purchase) is processed and paid for by the store: the App Store on iOS, Google Play on Android. The App receives from the store only information about the purchase itself — product, price, status and dates, and, on iOS, whether it was refunded or comes through Family Sharing — and checks the purchase status right on the device through StoreKit or Google Play Billing, without a server of its own.</p>
-    <p><strong>Contact:</strong> if you email the address in "Contact," we receive your email address and message. An email opened from the App is pre-filled with the App version and the OS version — you can remove them before sending.</p>
+    <p><strong>Purchases:</strong> the Pro subscription (and, on iOS, the one-time Lifetime purchase) is processed and paid for by the store: the App Store on iOS, Google Play on Android. From the store, the App receives only purchase information — product, price, status, and dates, and, on iOS, also whether a purchase was refunded or comes through Family Sharing, and the installation type (App Store or test build). The App checks purchase status right on the device through StoreKit or Google Play Billing, without a server of its own.</p>
+    <p><strong>Contact:</strong> if you email the address in "Contact," we receive your email address and message. An email opened from the App is pre-filled with the App version and the OS version, and on Android also the device maker and model. You can remove all of this before sending.</p>
 
     <h2>2. How We Use Your Data</h2>
     <ul>
@@ -178,14 +179,15 @@
     <ul>
       <li><strong>Your photos, videos, captions, analysis results, sorting history, statistics, and settings</strong> are stored locally on the device and are not sent to the developer's servers.</li>
       <li><strong>Analytics events, purchase information, and crash reports</strong> are processed on AppMetrica (Yandex) servers under their policy. Payments themselves are processed by Apple or Google.</li>
-      <li>The App makes network connections only to send de-identified analytics to AppMetrica, to make purchases and check the subscription through the App Store or Google Play, and, on iOS, for the system to download your own photos and videos from iCloud. We take reasonable safeguards, but no method of transmission over the Internet is fully secure.</li>
+      <li><strong>Backups:</strong> if backup is turned on for your device, the system saves some App data to your backup under Apple's or Google's rules. On iOS this is the sorting history, statistics, settings, and internal purchase records (the analysis cache is excluded); on Android, only settings and internal purchase records. The developer has no access to your backup.</li>
+      <li>The App makes network connections only to send de-identified analytics to AppMetrica, to make and check purchases through the App Store or Google Play, and, on iOS, for the system to download your own photos and videos from iCloud. We take reasonable safeguards, but no method of transmission over the Internet is fully secure.</li>
     </ul>
 
     <h2>5. Your Rights and Data Deletion</h2>
     <p>The App does not link the data it collects to your identity: it has no registration or accounts. Your photos, videos, analysis results, sorting history, and statistics are stored only on the device. To delete this data:</p>
     <ol>
       <li>Delete individual objects through the App — they go to the system trash: the "Recently Deleted" album on iOS, the device trash on Android, from which you can also restore or delete them right in the App. Objects are permanently erased from the trash per the system's rules, usually after 30 days. When you convert a Live Photo (motion photo) or compress a video, the original goes to the trash the same way, and the new copy stays in the library.</li>
-      <li>Delete <strong>Sweepy</strong> from the device to erase the local sorting-history and statistics database, the analysis cache, settings, and scheduled reminders on that device.</li>
+      <li>Delete <strong>Sweepy</strong> from the device to erase the local sorting-history and statistics database, the analysis cache, settings, and scheduled reminders on that device. If App data is in your device backup (see section 4), you can manage that backup in your iCloud or Google settings.</li>
     </ol>
     <p><strong>Subscription:</strong> deleting the App does not cancel your subscription. You can manage and cancel it in your Apple Account settings (App Store) or in Google Play, and you can also get there from the App's settings.</p>
     <p>Depending on your region, you may have rights under the GDPR or CCPA, including the right to access and delete your data. You may email the address in "Contact" regarding the de-identified analytics data. Deleting the App stops further analytics collection; events already sent are retained by AppMetrica under its rules and generally cannot be reliably matched to a specific person, since the App has no account.</p>
